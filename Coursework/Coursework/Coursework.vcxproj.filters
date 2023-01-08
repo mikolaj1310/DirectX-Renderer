@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Bloom">
+      <UniqueIdentifier>{d4b72d09-0350-405e-b6bc-5bc1af58202e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bloom">
+      <UniqueIdentifier>{fb95839c-1786-472e-9187-a5a7ae10cff2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Geometry">
+      <UniqueIdentifier>{13061e64-4ea0-44a6-892f-d1c1c9acb934}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Geometry">
+      <UniqueIdentifier>{4e7d79b2-cc30-4a1c-96b7-22c2f696f81d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Tesselation">
+      <UniqueIdentifier>{de197e1c-94f1-435b-8816-b0dce36f5ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Tesselation">
+      <UniqueIdentifier>{ea8c59cb-bec3-4379-ac69-2b98233a0f7d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Bloom">
+      <UniqueIdentifier>{5846a2d2-f546-402b-9d8d-7d9ac2408724}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Geometry">
+      <UniqueIdentifier>{4d3d7524-fb87-4b6f-ad03-e63517fff3af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Shadows">
+      <UniqueIdentifier>{43e024d6-9206-4b43-b419-35304e68c629}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Tessellation">
+      <UniqueIdentifier>{ee874b3f-32b6-4945-8e96-5c39394db8f6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="App1.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DepthShader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BasicShader.cpp">
+      <Filter>Source Files\Bloom</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorRemoveShader.cpp">
+      <Filter>Source Files\Bloom</Filter>
+    </ClCompile>
+    <ClCompile Include="HorizontalBlurShader.cpp">
+      <Filter>Source Files\Bloom</Filter>
+    </ClCompile>
+    <ClCompile Include="GeometryShader.cpp">
+      <Filter>Source Files\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="TessellationPlane.cpp">
+      <Filter>Source Files\Tesselation</Filter>
+    </ClCompile>
+    <ClCompile Include="TessellationShader.cpp">
+      <Filter>Source Files\Tesselation</Filter>
+    </ClCompile>
+    <ClCompile Include="VerticalBlurShader.cpp">
+      <Filter>Source Files\Bloom</Filter>
+    </ClCompile>
+    <ClCompile Include="WaterTessellation.cpp">
+      <Filter>Source Files\Tesselation</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="App1.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DepthShader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicShader.h">
+      <Filter>Header Files\Bloom</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorRemoveShader.h">
+      <Filter>Header Files\Bloom</Filter>
+    </ClInclude>
+    <ClInclude Include="HorizontalBlurShader.h">
+      <Filter>Header Files\Bloom</Filter>
+    </ClInclude>
+    <ClInclude Include="GeometryShader.h">
+      <Filter>Header Files\Geometry</Filter>
+    </ClInclude>
+    <ClInclude Include="TessellationPlane.h">
+      <Filter>Header Files\Tesselation</Filter>
+    </ClInclude>
+    <ClInclude Include="TessellationShader.h">
+      <Filter>Header Files\Tesselation</Filter>
+    </ClInclude>
+    <ClInclude Include="WaterTessellation.h">
+      <Filter>Header Files\Tesselation</Filter>
+    </ClInclude>
+    <ClInclude Include="VerticalBlurShader.h">
+      <Filter>Header Files\Bloom</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="verticalBlur_ps.hlsl">
+      <Filter>Resource Files\Bloom</Filter>
+    </FxCompile>
+    <FxCompile Include="bloom_ps.hlsl">
+      <Filter>Resource Files\Bloom</Filter>
+    </FxCompile>
+    <FxCompile Include="colorRemove_ps.hlsl">
+      <Filter>Resource Files\Bloom</Filter>
+    </FxCompile>
+    <FxCompile Include="horizontalBlur_ps.hlsl">
+      <Filter>Resource Files\Bloom</Filter>
+    </FxCompile>
+    <FxCompile Include="horizontalBlur_vs.hlsl">
+      <Filter>Resource Files\Bloom</Filter>
+    </FxCompile>
+    <FxCompile Include="triangle_gs.hlsl">
+      <Filter>Resource Files\Geometry</Filter>
+    </FxCompile>
+    <FxCompile Include="triangle_ps.hlsl">
+      <Filter>Resource Files\Geometry</Filter>
+    </FxCompile>
+    <FxCompile Include="triangle_vs.hlsl">
+      <Filter>Resource Files\Geometry</Filter>
+    </FxCompile>
+    <FxCompile Include="depth_hs.hlsl">
+      <Filter>Resource Files\Shadows</Filter>
+    </FxCompile>
+    <FxCompile Include="depth_ps.hlsl">
+      <Filter>Resource Files\Shadows</Filter>
+    </FxCompile>
+    <FxCompile Include="depth_vs.hlsl">
+      <Filter>Resource Files\Shadows</Filter>
+    </FxCompile>
+    <FxCompile Include="depthGrass_gs.hlsl">
+      <Filter>Resource Files\Shadows</Filter>
+    </FxCompile>
+    <FxCompile Include="depthGround_ds.hlsl">
+      <Filter>Resource Files\Shadows</Filter>
+    </FxCompile>
+    <FxCompile Include="depthWater_ds.hlsl">
+      <Filter>Resource Files\Shadows</Filter>
+    </FxCompile>
+    <FxCompile Include="water_ds.hlsl">
+      <Filter>Resource Files\Tessellation</Filter>
+    </FxCompile>
+    <FxCompile Include="water_ps.hlsl">
+      <Filter>Resource Files\Tessellation</Filter>
+    </FxCompile>
+    <FxCompile Include="tessellation_ds.hlsl">
+      <Filter>Resource Files\Tessellation</Filter>
+    </FxCompile>
+    <FxCompile Include="tessellation_hs.hlsl">
+      <Filter>Resource Files\Tessellation</Filter>
+    </FxCompile>
+    <FxCompile Include="tessellation_ps.hlsl">
+      <Filter>Resource Files\Tessellation</Filter>
+    </FxCompile>
+    <FxCompile Include="tessellation_vs.hlsl">
+      <Filter>Resource Files\Tessellation</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
